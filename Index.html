@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornerQuest - DVD Screensaver Game</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: #FFD700;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1e3c72;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 30px 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .download-section {
+            margin: 50px 0;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #FFD700;
+            color: #1e3c72;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            opacity: 0.7;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .logo { width: 80px; height: 80px; font-size: 32px; }
+            .download-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📺</div>
+        
+        <h1>CornerQuest</h1>
+        <p class="subtitle">The Ultimate DVD Screensaver Game</p>
+        
+        <p>Remember watching the DVD logo bounce around the screen, waiting for it to hit the corner perfectly? Now you can turn that nostalgia into an exciting prediction game!</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🎯 Predict the Corner</h3>
+                <p>Watch the DVD logo bounce and predict which corner it will hit. Build streaks and earn multipliers!</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🎮 Multiple Game Modes</h3>
+                <p>Classic, Chaos, Zen, Demo, and Pong modes. Each offers a unique twist on the bouncing logo experience.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>⚡ Power-Ups</h3>
+                <p>Earn power-up points and activate special abilities like slow motion, trajectory helpers, and shields.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📱 Retro Aesthetic</h3>
+                <p>Enjoy CRT scanlines, VHS transitions, and authentic DVD color cycling for that perfect nostalgic feel.</p>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2>Coming Soon</h2>
+            <p>CornerQuest will be available on mobile app stores</p>
+            
+            <div class="download-buttons">
+                <a href="#" class="btn">📱 iOS App Store</a>
+                <a href="#" class="btn">🤖 Google Play</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Built with React Native & Expo</p>
+            <p><a href="privacy-policy.md">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
